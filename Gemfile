@@ -32,6 +32,11 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#Adding rspec for testing app
+group :test, :development do
+  gem "rspec-rails", "~> 2.4"
+end
+
 gem 'github-markup'
 gem 'redcarpet'
 gem 'RedCloth'
