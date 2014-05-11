@@ -1,0 +1,50 @@
+
+
+<h1>Moja lista rzeczy do zrobienia</h1>
+<span class="formbutton"><%= link_to 'Dodaj nowe zadanie', new_todo_path %></span>
+<span class="formbutton"><%= link_to 'O nas', controller: 'pages', action: 'about' %></span>
+<span class="formbutton"><%= link_to 'Welcome!', controller: 'pages', action: 'welcome' %></span>
+<span class="search-engine"><%= render 'search' %></span>
+
+  <div id="content">
+    <% @todos.each do |todo| %>
+      <div class="item">
+        <div class="item-content">
+          <p class="item-title"><%= todo.name %></p>
+          <p class="item-desc"><%= todo.description %></p>
+          <span class="formbutton"><%= link_to 'Wyświetl', todo %></span>
+          <span class="formbutton"><%= link_to 'Edytuj', edit_todo_path(todo) %></span>
+          <span class="formbutton"><%= link_to 'Usuń', todo, method: :delete, data: { confirm: 'Jesteś pewien?' } %></span>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<br>
+<%= will_paginate @todos %>
+<script>
+$( document ).ready(function() {
+    var $container = $('#content');
+    
+    $container.isotope({
+      animationEngine : 'jquery',
+      itemSelector: '.item'
+    });
+
+    $container.infinitescroll({
+      navSelector  : ".pagination",            
+                     // selector for the paged navigation (it will be hidden)
+      nextSelector : ".next_page",    
+                     // selector for the NEXT link (to page 2)
+      itemSelector : ".item",
+        loading: {
+            finishedMsg: 'No more pages to load.',
+            img: 'http://i.imgur.com/qkKy8.gif'
+          }
+        },
+        // call Isotope as a callback
+        function( newElements ) {
+          $container.isotope( 'appended', $( newElements ) ); 
+        }
+      );
+  }); 
+</script>

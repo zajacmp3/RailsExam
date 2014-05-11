@@ -1,0 +1,147 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #FEFFC9;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.notice img {
+  max-width: 200px;
+  width: 100%;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+}
+a:visited {
+color: #666;
+}
+a:hover {
+color: #fff;
+background-color: #000;
+}
+
+
+body #content .item {
+	margin: 20px;
+	width: 400px;
+	height: 385px;
+	background:url('/images/post-it-note.gif');
+	background-size: 400px 400px;
+	background-repeat:no-repeat;
+}
+
+body #content .item .item-content {
+	padding: 40px 50px 0;
+	overflow: hidden;
+}
+
+body #content .item .item-content .item-title{
+	text-align: center;
+	font-size: 21px;
+	font-weight: 700;
+}
+
+body h1 {
+	text-align: center;
+}
+
+.item-desc {
+	max-height: 147px;
+	overflow: hidden;
+}
+
+.item-content {
+    height: 310px;
+    position:                   relative;
+    font-family:                sans-serif;
+    display:                    block;
+    overflow:                   hidden;
+}
+.item-desc {
+	position: relative;
+    padding:                    20px;
+    width:                      204px;
+    overflow:                   hidden;
+    font-size:                  .95em;
+    line-height:                1;
+    text-align:     			justify;
+}
+
+.item-desc:before {
+    content:                    '...';
+    text-align:                 right;
+    position:                   absolute;
+    display:                    block;
+    width:                      2em;
+    height:                     1em;
+    bottom:                     0em;
+    right:                      5px;
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UwZTBlMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iI2ZkZWI1YyIgc3RvcC1vcGFjaXR5PSIwLjQzIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ2JSIgc3RvcC1jb2xvcj0iI2ZkZWI1YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iI2ZkZWI1YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(left, rgba(224,224,224,0) 0%, rgba(253,235,92,0.43) 20%, rgba(253,235,92,1) 46%, rgba(253,235,92,1) 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(224,224,224,0)), color-stop(20%,rgba(253,235,92,0.43)), color-stop(46%,rgba(253,235,92,1)), color-stop(99%,rgba(253,235,92,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(224,224,224,0) 0%,rgba(253,235,92,0.43) 20%,rgba(253,235,92,1) 46%,rgba(253,235,92,1) 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(224,224,224,0) 0%,rgba(253,235,92,0.43) 20%,rgba(253,235,92,1) 46%,rgba(253,235,92,1) 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(224,224,224,0) 0%,rgba(253,235,92,0.43) 20%,rgba(253,235,92,1) 46%,rgba(253,235,92,1) 99%); /* IE10+ */
+background: linear-gradient(to right, rgba(224,224,224,0) 0%,rgba(253,235,92,0.43) 20%,rgba(253,235,92,1) 46%,rgba(253,235,92,1) 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e0e0e0', endColorstr='#fdeb5c',GradientType=1 ); /* IE6-8 */
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.form {
+  width: 250px;
+}
+
+.formbutton {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffa200;
+  padding: 10px 20px;
+  background: -moz-linear-gradient(
+    top,
+    #ffffff 0%,
+    #ffffff 50%,
+    #d6d6d6);
+  background: -webkit-gradient(
+    linear, left top, left bottom,
+    from(#ffffff),
+    color-stop(0.50, #ffffff),
+    to(#d6d6d6));
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 3px solid #ffbf00;
+  -moz-box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 3px rgba(255,255,255,1);
+  -webkit-box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 3px rgba(255,255,255,1);
+  box-shadow:
+    0px 1px 3px rgba(000,000,000,0.5),
+    inset 0px 0px 3px rgba(255,255,255,1);
+  text-shadow:
+    0px -1px 0px rgba(000,000,000,0.1),
+    0px 1px 0px rgba(255,255,255,1);
+}

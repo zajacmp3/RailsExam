@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<div class="show formbutton">
+	<p>
+	  <strong>Tytuł:</strong>
+	  <%= @todo.name %>
+	</p>
+
+	<p>
+	  <strong>Opis:</strong>
+	  <%= @todo.description %>
+	</p>
+
+	<p>
+		<%= image_tag @todo.image %>
+	</p>
+
+	<%= link_to 'Edycja', edit_todo_path(@todo) %> |
+	<%= link_to 'Powrót', todos_path %>
+</div>

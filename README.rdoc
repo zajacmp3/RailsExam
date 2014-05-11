@@ -1,28 +1,27 @@
-== README
+== README Update 2/4/2014
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Architektura serwisów internetowych. Zadanie my_static_pages
 
-Things you may want to cover:
+Link do działającej aplikacji na własnym skonfigurowanym serwerze www.rails.zajacmp3.pl
 
-* Ruby version
+==Wykonane w projekcie:
+ * Użycie isotope do układania i karteczek w trakcie skalowania strony
+ * Użycie carrierwave gem do wrzucania obrazków
+ * Skonfigurowanie własnego serwera apache2 z użyciem passanger dla projektu rails
+ * Nadanie estetycznej minimalistycznej szaty strony.
+ * Dodanie paginacji z użyciem gemu will_paginate
+ * Dodanie infinite scroll
+ * Dodanie wyszukiwarki
+==Do zrobienia w ramach własnej nauki:
+ * Nie używanie subdomeny dla projektów rails
+ * Dodanie systemy rejestracji logowania i możliwości indywidualizacji list 'todo'
 
-* System dependencies
+==Testing on:
 
-* Configuration
+* Ruby version: ruby-2.1.1 [ x86_64 ]
 
-* Database creation
+* Configuration: apache2 + passanger + mysql
 
-* Database initialization
+* Database creation: migration 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Database initialization: migration (rake db:migrate)

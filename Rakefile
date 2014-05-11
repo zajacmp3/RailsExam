@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-RailsExam::Application.load_tasks
+MyStaticPages::Application.load_tasks

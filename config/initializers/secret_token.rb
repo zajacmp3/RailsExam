@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-RailsExam::Application.config.secret_key_base = 'f8343ced0bf8249e121ad85fc780ca81a3af74dde7029e5b7bbded8890c3f237a2315b7c89e975a4acef2b0627413b63fc8439ae6e601e71b6258f272f9c182d'
+MyStaticPages::Application.config.secret_key_base = '812c403f9af862c1f196d4d3442f5963c250a527c650469d22060f46ef207a444d3ed52236e9073e2a897e56a9e39c65e8ae9cb49e795e2c75b8dbb8150cdb04'

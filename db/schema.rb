@@ -11,6 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140317192913) do
+
+  create_table "todos", force: true do |t|
+    t.text     "name"
+    t.string   "description"
+    t.string   "image"
+    t.string   "remote_image_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
