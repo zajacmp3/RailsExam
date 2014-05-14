@@ -1,12 +1,26 @@
 MyStaticPages::Application.routes.draw do
+  get "user_sessions/new"
+  get "user_sessions/create"
+  get "user_sessions/destroy"
+
+  resources :user_sessions
+  resources :users
+
+  get 'login' => 'user_sessions#new', :as => :login
+  post 'logout' => 'user_sessions#destroy', :as => :logout
+  get 'logout' => 'user_sessions#destroy'
+
+  resources :users
+
   resources :todos
 
   resources :pages
   root 'todos#index'
   match "search", to: "todos#search", via: 'post'
   match "search", to: "todos#index", via: 'get'
-match "welcome", to: "pages#welcome", via: 'get'
-match "about",   to: "pages#about",   via: 'get'
+  match "welcome", to: "pages#welcome", via: 'get'
+  match "about",   to: "pages#about",   via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

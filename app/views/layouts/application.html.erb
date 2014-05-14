@@ -8,7 +8,20 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="nav" class="navigation-bar">
+    <% if current_user %>
+      <%= link_to "Edytuj profil", edit_user_path(current_user.id) %>
+      <%= link_to "Wyloguj", :logout, method: :post %>
+    <% else %>
+      <%= link_to "Rejestracja", new_user_path %> |
+      <%= link_to "Logowanie", :login %>
+    <% end %>
+  </div>
+  <div>
+    <p id="notice"><%= flash[:notice] %></p>
+    <p id="alert"><%= flash[:alert] %></p>
+  </div>
+  <%= yield %>
 
 </body>
 </html>
