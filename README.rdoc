@@ -1,4 +1,6 @@
-== README Update 14/5/2014
+== README Update 17/5/2014
+
+{<img src="https://magnum.travis-ci.com/zajacmp3/RailsExam.svg?token=6eYhJgPBvGpCoSC2sgAy&branch=master" alt="Build Status" />}[https://magnum.travis-ci.com/zajacmp3/RailsExam]
 
 Architektura serwisów internetowych. Zadanie my_static_pages + nowy model + testy do egzaminu
 
