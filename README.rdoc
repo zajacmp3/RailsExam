@@ -2,7 +2,15 @@
 
 Architektura serwisów internetowych. Zadanie my_static_pages + nowy model + testy do egzaminu
 
-Link do działającej aplikacji na własnym skonfigurowanym serwerze www.rails.zajacmp3.pl
+Link do działającej aplikacji na własnym skonfigurowanym serwerze www.railsexam.zajacmp3.pl
+( w momencie pisania tego link jeszcze nie działa z powodu tego, że ovh.pl nie działa i nie mogę dodać subdomeny... )
+
+==Travis
+https://magnum.travis-ci.com/zajacmp3/RailsExam
+
+==Nowości w projekcie:
+ * Dodanie testów przy pomocy biblioteki rspec
+ * Dodanie nowej części serwisu, która autoryzuje i loguje użytkowników
 
 ==Wykonane w projekcie:
  * Użycie isotope do układania i karteczek w trakcie skalowania strony
@@ -12,8 +20,6 @@ Link do działającej aplikacji na własnym skonfigurowanym serwerze www.rails.z
  * Dodanie paginacji z użyciem gemu will_paginate
  * Dodanie infinite scroll
  * Dodanie wyszukiwarki
- * Dodanie testów przy pomocy biblioteki rspec
- * Dodanie nowej części serwisu, która autoryzuje i loguje użytkowników
 ==Do zrobienia w ramach własnej nauki:
  * Nie używanie subdomeny dla projektów rails
  * Dodanie systemy rejestracji logowania i możliwości indywidualizacji list 'todo'
