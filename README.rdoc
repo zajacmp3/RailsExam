@@ -19,14 +19,10 @@ Link do działającej aplikacji na własnym skonfigurowanym serwerze www.rails.z
  * Dodanie systemy rejestracji logowania i możliwości indywidualizacji list 'todo'
 
 ==Raport z testów
- *[deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
-...........................DEPRECATION: `expect { }.should_not` is deprecated. Use `expect { }.not_to` instead. Called from /home/mateusz/RailsExam/spec/controllers/todos_controller_spec.rb:10:in `block (3 levels) in <top (required)>'.
-..................
-
-Finished in 2.22 seconds
-45 examples, 0 failures
-
-Randomized with seed 1976
+*Finished in 2.22 seconds
+*45 examples, 0 failures
+*
+*Randomized with seed 1976
 
 ==Testing on:
 
