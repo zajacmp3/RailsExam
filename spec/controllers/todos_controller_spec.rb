@@ -7,7 +7,7 @@ describe TodosController do
 		it "assigns @todos" do
 			subject.class.skip_before_filter :require_login
 			get :index
-			expect(:todos).should_not equal(nil)
+			expect(:todos).not_to equal(nil)
 		end
 
 		it "renders the index template" do
