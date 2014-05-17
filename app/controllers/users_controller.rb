@@ -28,14 +28,12 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    respond_to do |format|
       if @user.save
-        redirect_to(:new, notice: 'User was successfully created')
+        redirect_back_or_to(:users, notice: 'Login successful')
       else
-        format.html { render action: 'new' }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+        flash.now[:alert] = 'Login failed'
+        render action: 'new'
       end
-    end
   end
 
   # PATCH/PUT /users/1
