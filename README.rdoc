@@ -3,7 +3,9 @@
 Architektura serwisów internetowych. Zadanie my_static_pages + nowy model + testy do egzaminu
 
 Link do działającej aplikacji na własnym skonfigurowanym serwerze www.railsexam.zajacmp3.pl
-( w momencie pisania tego link jeszcze nie działa z powodu tego, że ovh.pl nie działa i nie mogę dodać subdomeny... )
+Przykładowy user:
+login: admin@admin.pl
+hasło: admin
 
 ==Travis
 https://magnum.travis-ci.com/zajacmp3/RailsExam

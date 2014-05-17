@@ -30,7 +30,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        redirect_to(:users, notice: 'User was successfully created')
+        redirect_to(:new, notice: 'User was successfully created')
       else
         format.html { render action: 'new' }
         format.json { render json: @user.errors, status: :unprocessable_entity }
