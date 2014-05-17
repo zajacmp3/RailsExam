@@ -16,4 +16,4 @@ describe "todos/index.html.erb" do
     render
     expect(rendered).to match /.infinitescroll/m
   end
-end
+end 
